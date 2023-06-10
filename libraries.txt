@@ -1,0 +1,2 @@
+numpy
+xpress==9.0.0

@@ -35,7 +35,7 @@ problem += lpSum(aux[i] for i in range(n)) == lpSum(y[i] for i in range(n))
 
 # Reformular la variable p para que tome valores enteros
 p_integer = LpVariable("p_integer", lowBound=0, cat="Integer")
-M = 1000  # Constante suficientemente grande
+M = 100000000  # Constante suficientemente grande
 
 # Restricción para garantizar que p sea entero
 problem += p == p_integer / M # COMO DIVIDIR UNA VARIABLE DE DECISIÓN CON UN ENTERO =????? 
